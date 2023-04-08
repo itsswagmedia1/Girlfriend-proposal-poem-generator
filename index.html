@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Girlfriend Proposal Poem Generator</title>
+	<style>
+	/* Mobile styles */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 58px;
+  margin: 50px;
+}
+
+form {
+  margin: 50px;
+}
+
+label {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  font-size: 35px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 35px;
+  background-color: #FFD300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+#poem {
+  margin: 20px;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+	
+	
+	
+	</style>
+	<script>
+		function generatePoem() {
+			// Get user input
+			let girlfriendName = document.getElementById("girlfriend-name").value;
+			let relationshipLength = document.getElementById("relationship-length").value;
+			let specialTrait = document.getElementById("special-trait").value;
+			let favoriteMemory = document.getElementById("favorite-memory").value;
+			let futurePlans = document.getElementById("future-plans").value;
+
+			// Generate poem
+			let poem = `
+			Dear ${girlfriendName},
+			From the moment we met, my heart skipped a beat.
+			${relationshipLength} months have passed, and my love has only grown more sweet.
+			Your ${specialTrait} is something that I admire,
+			And every moment with you is one that I desire.
+
+			Do you remember the time when we ${favoriteMemory}?
+			It was a moment that I'll never forget, and one that I hold dear.
+			As we look towards the future, I see us together,
+			Sharing in adventures that we'll remember forever.
+
+			So my darling, I have a question to ask,
+			Will you do me the honor of becoming my lifelong companion, my better half?
+			Together we'll face whatever life throws our way,
+			And I promise to love you more with each passing day.
+
+			Love always,
+			[Your Name]
+			`;
+
+			// Display poem
+			document.getElementById("poem").innerHTML = poem;
+		}
+	</script>
+</head>
+<body>
+	<h1>Girlfriend Proposal Poem Generator</h1>
+	<form>
+		<label for="girlfriend-name">Enter your girlfriend's name:</label>
+		<input type="text" id="girlfriend-name"><br>
+
+		<label for="relationship-length">Enter how long you've been in a relationship:</label>
+		<input type="text" id="relationship-length"><br>
+
+		<label for="special-trait">Enter a special trait about your girlfriend:</label>
+		<input type="text" id="special-trait"><br>
+
+		<label for="favorite-memory">Enter your favorite memory with your girlfriend:</label>
+		<input type="text" id="favorite-memory"><br>
+
+		<label for="future-plans">Enter your future plans with your girlfriend:</label>
+		<input type="text" id="future-plans"><br>
+
+		<button type="button" onclick="generatePoem()">Generate Poem</button>
+	</form>
+	<div id="poem"></div>
+	
+	 <footer>
+ <style>
+ footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-left p {
+  margin: 0;
+  text-align: center;
+   
+  
+}
+
+}
+
+ 
+ 
+ </style>
+ 
+ 
+ 
+  <div class="footer-left"> <p>&copy; 2023 Self Introduction Generator</p> 
+ </footer>
+ <p>Contact: itsswagmedia@gmail.com </p>
+    
+	
+</body>
+</html>
